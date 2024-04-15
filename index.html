@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" contetn="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="viewport" contetn="width=device-width, initial-scale=1.0" />
         <title>Rock - Paper - Scissors</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
     </head>
     <body>
-        
-        <script src="script.js"></script>
+        <!-- start header section  -->
+        <header class="header">
+            <h1 id="header-text">ROCK PAPER SCISSORS</h1>
+        </header>
+        <!-- end header section  -->
+
+        <!-- start playground section -->
+        <main class="main">
+            <!-- start result section-->
+            <div class="main-inner section-result">
+                <p id="section-result-text-1">Select any one from below</p>
+                <p id="section-result-text-2">First to score 5 points wins the game</p>
+            </div>
+            <!-- end result section-->
+
+            <!-- start players' choice and score section  -->
+            <div class="flex main-inner players-choice-score-section">
+                <div class="player-section">
+                    <p id="player-choice">❔</p>
+                    <p id="player-score">Player: <span id="p-score">0</span></p>
+                </div>
+                <div class="computer-section">
+                    <p id="computer-choice">❔</p>
+                    <p id="computer-score">Computer: <span id="c-score">0</span></p>
+                </div>
+            </div>
+            <!-- end players' choice and score section  -->
+
+            <!-- start choice buttons section -->
+            <div class="flex main-inner choice-buttons-section">
+                <button class="btn btn-choice btn-rock" id="rock" data-value="0">🪨</button>
+                <button class="btn btn-choice btn-paper" id="paper" data-value="1">📃</button>
+                <button class="btn btn-choice btn-scissor" id="scissors" data-value="2">✂️</button>
+            </div>
+            <!-- end choice buttons section -->
+        </main>
+        <!-- end playground section -->
+
     </body>
 </html>
