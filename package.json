@@ -1,0 +1,28 @@
+{
+    "name": "rock-paper-scissors",
+    "version": "1.0.0",
+    "description": "",
+    "main": "new.js",
+    "scripts": {
+        "start": "webpack-dev-server --config webpack.dev.js --open",
+        "build": "webpack --config webpack.prod.js",
+        "deploy": "gh-pages -d dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://joash-jsh.github.io",
+    "devDependencies": {
+        "css-loader": "^7.1.2",
+        "css-minimizer-webpack-plugin": "^7.0.0",
+        "gh-pages": "^6.1.1",
+        "html-loader": "^5.0.0",
+        "html-webpack-plugin": "^5.6.0",
+        "mini-css-extract-plugin": "^2.9.0",
+        "style-loader": "^4.0.0",
+        "terser-webpack-plugin": "^5.3.10",
+        "webpack": "^5.93.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.4"
+    }
+}
