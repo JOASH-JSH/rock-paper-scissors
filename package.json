@@ -2,7 +2,7 @@
     "name": "rock-paper-scissors",
     "version": "1.0.0",
     "description": "",
-    "main": "new.js",
+    "main": "index.js",
     "scripts": {
         "start": "webpack-dev-server --config webpack.dev.js --open",
         "build": "webpack --config webpack.prod.js",
