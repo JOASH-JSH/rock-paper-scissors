@@ -20,7 +20,7 @@ module.exports = {
                 collapseWhitespace: true,
             },
         }),
-        new MiniCssExtractPlugin({ filename: "index.css" }),
+        new MiniCssExtractPlugin({ filename: "[name].[hash].css" }),
     ],
     optimization: {
         minimizer: [new CssMinimizerPlugin(), new TerserWebpackPlugin()],
